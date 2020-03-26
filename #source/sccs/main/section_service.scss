@@ -1,0 +1,90 @@
+.service {
+  animation-name: stretchRight;
+  -webkit-animation-name: stretchRight;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(25,17,34,.1);
+  margin-right: 95px;
+  margin-left: 95px;
+  overflow: hidden;
+
+  .service__logo img {
+    width: 120px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service__content {
+    vertical-align: top;
+    min-height: 585px;
+    cursor: pointer;
+    width: calc(99.2%/3);
+    display: inline-block;
+    box-shadow: 0 1px 0 0 #f5f3f7;
+    border-left: 1px solid #f5f3f7;
+    transition-duration: 0.35s;
+    filter: grayscale(.8);
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      background: rgba(255,255,255,.2);
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      animation: bloom ease-in-out 0.75s forwards;
+      transition-duration: 0.35s;
+
+      .service__name {
+        transition-duration: 0.35s;
+        color: #ff8562;
+      }
+    }
+
+    &:hover::before {
+      animation: circle 0.75s;
+    }
+  }
+
+  .service__container {
+    padding: 50px 60px;
+  }
+
+  .service__name {
+    text-align: center;
+    font-family: $font-fc;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #202020;
+    transition-duration: 0.35s;
+  }
+
+  .service__description {
+    font-family: $font-fc;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #202020;
+  }
+}
