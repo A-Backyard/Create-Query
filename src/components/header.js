@@ -1,6 +1,7 @@
 
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
+import LogoItem from '../assets/img/home/logo.png'
 
 const Header = () => {
     return(
@@ -8,7 +9,7 @@ const Header = () => {
             <div className="header__content">
                 <div className="header__logo">
                     <div className="header__logo-img">
-                        <NavLink to="/"><img src="img/logo.png" alt="" /></NavLink>
+                        <NavLink to="/"><img src={LogoItem} alt="" /></NavLink>
                     </div>
                     <div className="header__logo-name">
                         <NavLink to="/" className="logoname-1" id="ln1">Create</NavLink>

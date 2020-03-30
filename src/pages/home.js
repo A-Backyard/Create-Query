@@ -1,6 +1,17 @@
 
 
 import React from 'react'
+import NameItem from '../assets/img/home/title-icon.png'
+import StrategyItem from '../assets/img/home/strategy.jpg'
+import SiteItem from '../assets/img/home/site.svg'
+import MarketItem from '../assets/img/home/market.svg'
+import DesignItem from '../assets/img/home/design.svg'
+import Port1Item from '../assets/img/home/port1.PNG'
+import Port2Item from '../assets/img/home/port2.PNG'
+import FacebookItem from '../assets/img/home/facebook.png'
+import WhatsappItem from '../assets/img/home/whatsapp.png'
+import InstagramItem from '../assets/img/home/instagram.png'
+import TelegramItem from '../assets/img/home/telegram.png'
 
 const Home = () => {
 
@@ -12,7 +23,7 @@ const Home = () => {
                 <div className="container">
                     <div className="site">
                         <div className="site__title">Create
-                            <br />Query<img src="img/title-icon.png" alt="" /></div>
+                            <br />Query<img src={NameItem} alt="" /></div>
                         <div className="site__slogan">Комплексная разработка сайтов, оформление соц. сетей, айдентика, а так
                             же дизайн чего-то там кого-то там.
                         </div>
@@ -22,7 +33,7 @@ const Home = () => {
                             <div className="advantage__content-title">
                                 Наша компания предлагает
                             </div>
-                            <div className="advantage__content-img"><img src="img/strategy.jpg" alt="" /></div>
+                            <div className="advantage__content-img"><img src={StrategyItem} alt="" /></div>
                             <div className="advantage__content-description">
                                 <ul>
                                     <li><span className="icon-circle"></span><a href="">Высокое качество работ</a></li>
@@ -41,15 +52,14 @@ const Home = () => {
                 <div className="service__block">
                     <div className="service__content">
                         <div className="service__container">
-                            <div className="service__logo"><img src="img/site.svg" alt="" /></div>
+                            <div className="service__logo"><img src={SiteItem} alt="" /></div>
                             <div className="service__name">Создание сайтов</div>
                             <div className="service__description">Создание сайта с нуля — один из важных этапов в
                                 построении успешного бизнеса и его развитии, ведь именно он — тот самый маркетинговый
                                 инструмент, который позволяет привлекать новых клиентов, повышать
                                 продажи
                                 и
-                                достойным образом представить ваш бизнес общественности. Создание сайтов в Киеве и
-                                продающих интернет-магазинов — приоритетное направление деятельности компании Artjoker.
+                                достойным образом представить ваш бизнес общественности.
                                 Обратившись к нам, вы получите не просто качественный программинг,
                                 красивый и эргономичный дизайн, но и комплексный подход к решению всех возложенных на
                                 нас бизнес-задач.
@@ -58,7 +68,7 @@ const Home = () => {
                     </div>
                     <div className="service__content">
                         <div className="service__container">
-                            <div className="service__logo"><img src="img/market.svg" alt="" /></div>
+                            <div className="service__logo"><img src={MarketItem} alt="" /></div>
                             <div className="service__name">Маркетинг</div>
                             <div className="service__description">Комплексный системный подход учитывает кратко- и
                                 долгосрочные цели бизнеса, использует все инструменты и каналы для получения целевых
@@ -72,7 +82,7 @@ const Home = () => {
                     </div>
                     <div className="service__content">
                         <div className="service__container">
-                            <div className="service__logo"><img src="img/design.svg" alt="" /></div>
+                            <div className="service__logo"><img src={DesignItem} alt="" /></div>
                             <div className="service__name">Дизайн</div>
                             <div className="service__description">Профессиональный дизайн сайта — в первую очередь
                                 логическая цепочка из индивидальной цветовой гаммы, графических изображений и самого
@@ -104,7 +114,7 @@ const Home = () => {
                 </div>
                 <div className="portfolio__wrapper">
                     <figure>
-                        <img src="img/port1.PNG" alt="" />
+                        <img src={Port1Item} alt="" />
                         <figcaption>
                             <h2>LUXURY AZUR</h2>
                             <p>Сайт разработанный специально для компании "Luxury Azur", которая занимается продажой
@@ -114,7 +124,7 @@ const Home = () => {
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="img/port2.PNG" alt="" />
+                        <img src={Port2Item} alt="" />
                         <figcaption>
                             <h2>EUROPASSGROUP</h2>
                             <p>Работа для компании "EUROPASSGROUP", по созданию небольшого проэкта направленного на
@@ -127,10 +137,10 @@ const Home = () => {
             <section className="contact">
                 <div className="container">
                     <div className="social">
-                        <a href="#"><img src="img/facebook.png" alt=""/></a>
-                        <a href="#"><img src="img/whatsapp.png" alt=""/></a>
-                        <a href="#"><img src="img/instagram.png" alt=""/></a>
-                        <a href="#"><img src="img/telegram.png" alt="" /></a>
+                        <a href="#"><img src={FacebookItem} alt=""/></a>
+                        <a href="#"><img src={WhatsappItem} alt=""/></a>
+                        <a href="#"><img src={InstagramItem} alt=""/></a>
+                        <a href="#"><img src={TelegramItem} alt="" /></a>
                     </div>
                     <div className="phone"><a href="">+380 50 983 49 00</a></div>
                 </div>
