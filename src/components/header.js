@@ -1,5 +1,6 @@
 
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
     return(
@@ -19,7 +20,7 @@ const Header = () => {
                     <nav className="menu">
                         <div className="header__btn"><span className="icon-bars"></span></div>
                         <ul>
-                            <li><a href="#">О компании</a></li>
+                            <li><Link to='/about'>О компании</Link></li>
                             <li><a href="#">Услуги</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
