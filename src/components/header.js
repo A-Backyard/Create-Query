@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 
 const Header = () => {
     return(
@@ -8,11 +8,11 @@ const Header = () => {
             <div className="header__content">
                 <div className="header__logo">
                     <div className="header__logo-img">
-                        <a href="index.html"><img src="img/logo.png" alt="" /></a>
+                        <NavLink to="/"><img src="img/logo.png" alt="" /></NavLink>
                     </div>
                     <div className="header__logo-name">
-                        <a href="#" className="logoname-1" id="ln1">Create</a>
-                        <a href="#" className="logoname-2" id="ln2"> Query</a>
+                        <NavLink to="/" className="logoname-1" id="ln1">Create</NavLink>
+                        <NavLink to="/" className="logoname-2" id="ln2"> Query</NavLink>
                     </div>
                 </div>
 
@@ -20,8 +20,8 @@ const Header = () => {
                     <nav className="menu">
                         <div className="header__btn"><span className="icon-bars"></span></div>
                         <ul>
-                            <li><Link to='/about'>О компании</Link></li>
-                            <li><a href="#">Услуги</a></li>
+                            <li><NavLink to='/about'>О компании</NavLink></li>
+                            <li><NavLink to="/service">Услуги</NavLink></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
