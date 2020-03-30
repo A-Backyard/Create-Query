@@ -1,0 +1,27 @@
+$font-fc: 'Fira Code', monospace;
+$font-r: 'Roboto', sans-serif;
+
+body {
+  background: #fbfafc;
+
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  a {
+    display: inline-block;
+    cursor: pointer;
+  }
+  /*  .container {
+    width: 1400px;
+    margin: 0 auto;
+  } */
+  ul li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

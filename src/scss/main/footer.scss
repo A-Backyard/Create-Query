@@ -1,0 +1,33 @@
+.privacy {
+  margin-top: 40px;
+  text-align: center;
+
+  a {
+    font-family: $font-fc;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(189, 189, 189);
+  }
+}
+
+.agreement {
+  margin-top: 10px;
+  text-align: center;
+
+  a {
+    font-family: $font-fc;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(189, 189, 189);
+  }
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: $font-fc;
+  font-size: 18px;
+  font-weight: 400;
+  color: #202020;
+}
