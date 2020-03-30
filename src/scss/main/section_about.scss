@@ -1,0 +1,21 @@
+.about__block {
+  margin-top: 40px;
+  padding: 0 10px;
+
+  .about__title {
+    font-family: $font-fc;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+
+  .about__description {
+    font-family: $font-fc;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,127 @@
+.section_top {
+  margin-top: 15px;
+
+  .site {
+    animation-name: stretchRight;
+    -webkit-animation-name: stretchRight;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+
+  .site__title {
+    font-family: $font-fc;
+    font-size: 150px;
+    font-weight: 600;
+    line-height: 120px;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+    color: #202020;
+
+    img {
+      max-width: 120px;
+      max-height: 80px;
+      margin-left: 20px;
+    }
+  }
+
+  .site__slogan {
+    margin-top: 60px;
+    font-family: $font-fc;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    color: #202020;
+  }
+}
+
+.advantage__content {
+  position: relative; //  width: calc(50%/2);
+  font-family: $font-fc;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+
+  .advantage__content-title {
+    font-family: $font-fc;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .advantage__content-img {
+    display: inline-block;
+    width: 42%;
+    margin-left: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .advantage__content-description {
+    margin-bottom: 25px;
+    top: 50%;
+    display: inline-block;
+    vertical-align: top;
+
+    ul {
+      margin: 15px;
+      padding: 0;
+    }
+
+    li {
+      transition-duration: 0.35s;
+      padding-bottom: 20px;
+
+      a {
+        color: #202020;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        transition-duration: 0.35s;
+      }
+    }
+
+    img {
+      max-width: 100px;
+      max-height: 50px;
+    }
+
+    &.d1 {
+      margin-left: 20px;
+    }
+
+    &.d2 {
+      margin-left: 30px;
+    }
+
+    &.d3 {
+      margin-left: 30px;
+    }
+
+    &.d4 {
+      margin-left: 20px;
+    }
+  }
+}
+
+.icon-circle:before {
+  content: "\e902";
+  color: #33e3bf;
+  margin-right: 10px;
+  vertical-align: middle;
+}
