@@ -1,0 +1,60 @@
+.aboutUs__content {
+  margin-top: 70px;
+
+  .aboutUs__content-logo {
+    display: flex;
+    justify-content: center;
+
+    .aboutUs__logo {
+
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    .aboutUs__logo-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+
+      .logo_name1 {
+        margin-left: 20px;
+        font-family: $font-fc;
+        font-size: 95px;
+        font-weight: 700;
+        line-height: 70px;
+      }
+
+      .logo_name2 {
+        margin-left: 20px;
+        font-family: $font-fc;
+        font-size: 95px;
+        font-weight: 700;
+        line-height: 70px;
+      }
+
+    }
+  }
+
+  .aboutUs__content-info {
+    margin-top: 40px;
+
+    .aboutUs__title {
+      font-family: $font-fc;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 77px;
+      letter-spacing: 5px;
+    }
+
+    .aboutUs__description {
+      margin-top: 20px;
+      font-family: $font-fc;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+    }
+  }
+}

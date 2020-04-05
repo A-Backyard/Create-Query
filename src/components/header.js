@@ -1,9 +1,34 @@
 
-import React from 'react'
+import React, {useEffect } from 'react'
 import {Link, NavLink} from 'react-router-dom'
 import LogoItem from '../assets/img/home/logo.png'
+import anime from 'animejs/lib/anime.es.js'
+
+
 
 const Header = () => {
+
+    useEffect(() => {
+        let textWrapper = document.querySelector('.ln1');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        anime.timeline({loop: false})
+            .add({
+                targets: '.ln1  .letter',
+                scale: [4,1],
+                opacity: [0,1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 70*i
+
+            });
+
+
+
+
+    },  []);
+
+
     return(
         <header className="header">
             <div className="header__content">
@@ -12,8 +37,8 @@ const Header = () => {
                         <NavLink to="/"><img src={LogoItem} alt="" /></NavLink>
                     </div>
                     <div className="header__logo-name">
-                        <NavLink to="/" className="logoname-1" id="ln1">Create</NavLink>
-                        <NavLink to="/" className="logoname-2" id="ln2"> Query</NavLink>
+                        <NavLink to="/"  class="ln1">Create </NavLink>
+                        <NavLink to="/"  сlass="ln2">Query</NavLink>
                     </div>
                 </div>
 
@@ -32,6 +57,7 @@ const Header = () => {
                 <div className="header__button"><a href="#">Оформить заказ</a></div>
             </div>
         </header>
+
     )
 };
 
