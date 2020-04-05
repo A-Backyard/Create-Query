@@ -1,0 +1,19 @@
+
+//---------992PX------------------
+@include media-breakpoint-up(lg) {
+  header{
+    .menu-toggler{
+      display: none;
+    }
+  }
+}
+
+
+//------------MOBILE-------------
+@include media-breakpoint-down(xs){
+  .mobile-nav{
+    .header__phone{
+      display: none;
+    }
+  }
+}

@@ -2,10 +2,10 @@
 
 import React from 'react'
 
-const Service = () => {
+const Services = () => {
     return(
         <h1>Services</h1>
     )
 }
 
-export default Service
+export default Services

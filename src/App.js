@@ -4,10 +4,15 @@ import {Switch, Route, Redirect, __RouterContext} from 'react-router-dom'
 import Layout from "./components/layout";
 import Home from "./pages/home";
 import About from "./pages/about";
-import Service from "./pages/service";
+import Services from "./pages/services";
 import {useTransition, animated} from 'react-spring'
 import Wrapper from "./components/wrapper";
+//icons
+import { library, } from "@fortawesome/fontawesome-svg-core";
+import { faBars, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 
+
+library.add(faBars, faTimesCircle);
 
 function App() {
 
@@ -28,8 +33,8 @@ function App() {
                     <Wrapper>
                         <Switch location = {item}>
                             <Route path = '/' exact component = {Home}/>
+                            <Route path = '/services' render = {Services}/>
                             <Route path = '/about' component = {About}/>
-                            <Route path = '/service' render = {Service}/>
                             <Redirect to = '/' />
                         </Switch>
                     </Wrapper>
