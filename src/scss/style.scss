@@ -1,13 +1,51 @@
 
+
+//overrides bootstrap theme
+$theme-colors: (
+        "primary": #530FAD,
+        "primary-light": #8243D6,
+        "primary-dark": #330570,
+        "primary2": #A600A6,
+        "primary2-light": #D235D2,
+        "primary2-dark": #6C006C,
+        "secondary": #1B1BB3,
+        "secondary-light": #4F4FD9,
+        "secondary-dark": #090974,
+);
+
+$primary: #530FAD;
+$primary-light: #8243D6;
+$primary-dark: #330570;
+$primary2: #A600A6;
+$primary2-light: #D235D2;
+$primary2-dark: #6C006C;
+$secondary: #1B1BB3;
+$secondary-light: #4F4FD9;
+$secondary-dark: #090974;
+
+$white: #fff;
+$black: #000;
+
+//bootstrap
+@import './node_modules/bootstrap/scss/bootstrap';
+//fonts
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext');
+//core
 @import '/main/core.scss';
-@import '/main/footer.scss';
+//mixins
+@import '/mixins/transitions.scss';
+@import '/mixins/keyframes.scss';
+@import '/mixins/box-shadow.scss';
+//components
 @import '/main/header.scss';
 @import '/main/portfolio.scss';
 @import '/main/section_about.scss';
 @import '/main/section_contact.scss';
 @import '/main/section_service.scss';
 @import '/main/section_top.scss';
+@import '/main/footer.scss';
+//pages styles
+@import '/pages/home';
 
 
 body {
@@ -21,4 +59,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
-
+// -------------RESPONSIVE STYLES-----------------
+@import '/main/respo';
